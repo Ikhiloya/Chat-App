@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.loya.android.rudigo.LoginActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_launcher" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:drawableLeft="@drawable/ic_person_black"
+            android:drawableTint="#009688"
+            android:drawablePadding="16dp"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColorHint="#009688" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@drawable/ic_enhanced_encryption_black"
+            android:drawablePadding="16dp"
+            android:hint="Password"
+            android:padding="10dp"
+            android:inputType="textPassword"
+            android:drawableTint="#009688"
+            android:textColorHint="#009688" />
+
+        <Button
+            android:id="@+id/sign_In_Btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Sign In"
+            android:textColor="#009688" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

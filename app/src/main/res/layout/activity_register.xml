@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.loya.android.rudigo.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#FFFFFF"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Register"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawablePadding="16dp"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColorHint="#009688" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawablePadding="16dp"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColorHint="#009688" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawablePadding="16dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColorHint="#009688" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawablePadding="16dp"
+            android:hint="Retype Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColorHint="#009688" />
+
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Sign Up"
+            android:textColor="#009688" />
+
+    </LinearLayout>
+
+</ScrollView>
+
+

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.loya.android.rudigo.CommentActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/profile_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/comment_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:id="@+id/usertextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/profile_appbar"
+        android:padding="16dp"
+        tools:text="Username" />
+
+    <TextView
+        android:id="@+id/ideatextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/usertextView"
+        android:padding="16dp"
+        tools:text="rationale"  />
+    <TextView
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/effect"
+        tools:text= "Effect"
+        android:layout_below="@id/ideatextView"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Comments"
+        android:id="@+id/comments"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/effect"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/comments"
+       />
+
+    <EditText
+        android:padding="10dp"
+        android:id="@+id/commentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:inputType="textMultiLine" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:src="@drawable/ic_send_black"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
+
+
+
+

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.loya.android.rudigo.NewThreadActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <EditText
+        android:id="@+id/idea_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Idea"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:textColor="#64FFDA"
+        android:textColorHint="#009688" />
+
+    <EditText
+        android:id="@+id/rational_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:drawablePadding="16dp"
+        android:hint="Rational"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:textColor="#64FFDA"
+        android:textColorHint="#009688" />
+
+    <EditText
+        android:id="@+id/effect_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:drawablePadding="16dp"
+        android:hint="Effect"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+
+        android:textColorHint="#009688" />
+
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Submit"
+        android:textColor="#009688" />
+
+
+</LinearLayout>

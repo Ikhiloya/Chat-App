@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#009688</item>
+        <!-- Light Indigo -->
+        <item name="colorPrimaryDark">#009688</item>
+        <!-- Dark Indigo -->
+        <item name="colorAccent">#4DB6AC</item>
+        <!-- Blue -->
+    </style>
+
+    <style name="AppTheme" parent="AppTheme.Base"></style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
