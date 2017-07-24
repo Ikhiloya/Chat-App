@@ -27,10 +27,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:hint="Idea"
+        android:hint="@string/idea"
         android:inputType="textMultiLine"
         android:padding="10dp"
-        android:textColor="#64FFDA"
         android:textColorHint="#009688" />
 
     <EditText
@@ -40,10 +39,9 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="10dp"
         android:drawablePadding="16dp"
-        android:hint="Rational"
+        android:hint="@string/rational"
         android:inputType="textMultiLine"
         android:padding="10dp"
-        android:textColor="#64FFDA"
         android:textColorHint="#009688" />
 
     <EditText
@@ -53,10 +51,9 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="10dp"
         android:drawablePadding="16dp"
-        android:hint="Effect"
+        android:hint="@string/effect"
         android:inputType="textMultiLine"
         android:padding="10dp"
-
         android:textColorHint="#009688" />
 
 

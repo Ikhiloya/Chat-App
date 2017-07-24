@@ -7,6 +7,7 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -15,6 +16,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -82,8 +85,33 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, NewThreadActivity.class);
-                startActivity(intent);
+                //create an AlertDialog.Builder object
+                AlertDialog.Builder mBuilder = new AlertDialog.Builder(MainActivity.this);
+                //inflate the MainActivity with the new_thread Activity
+                View mView = getLayoutInflater().inflate(R.layout.activity_new_thread, null);
+                EditText ideaEditText = (EditText) mView.findViewById(R.id.idea_editText);
+                EditText rationalEditText = (EditText) mView.findViewById(R.id.rational_editText);
+                EditText effectEditText = (EditText) mView.findViewById(R.id.effect_editText);
+                Button btnSubmit = (Button) mView.findViewById(R.id.submit_button);
+
+                //set the view for the layout
+                mBuilder.setView(mView);
+                //create a dialog
+                AlertDialog dialog = mBuilder.create();
+                //show the dialog
+                dialog.show();
+
+//                btnSubmit.setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View v) {
+//                        Intent intent = new Intent(NewThreadActivity.this, MainActivity.class);
+//                        startActivity(intent);
+//                    }
+//                });
+
+//
+//                Intent intent = new Intent(MainActivity.this, NewThreadActivity.class);
+//                startActivity(intent);
 
             }
         });

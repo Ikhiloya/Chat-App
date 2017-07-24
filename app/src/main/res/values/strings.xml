@@ -15,4 +15,7 @@
     <string name="first_name">First Name</string>
     <string name="profile">Profile</string>
     <string name="start_a_thread">Start A Thread</string>
+    <string name="effect">Effect</string>
+    <string name="rational">Rational</string>
+    <string name="idea">Idea</string>
 </resources>
