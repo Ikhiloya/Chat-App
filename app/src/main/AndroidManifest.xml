@@ -18,7 +18,8 @@
         <activity android:name=".RegisterActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".UserProfileActivity" />
-        <activity android:name=".CommentActivity" />
+        <activity android:name=".CommentActivity"
+        android:windowSoftInputMode="adjustPan"/>
         <activity android:name=".NewThreadActivity"></activity>
     </application>
 

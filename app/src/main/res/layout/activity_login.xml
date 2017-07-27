@@ -22,29 +22,43 @@
             android:layout_gravity="center"
             android:src="@mipmap/ic_launcher" />
 
-        <EditText
+        <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:drawableLeft="@drawable/ic_person_black"
-            android:drawableTint="#009688"
-            android:drawablePadding="16dp"
-            android:hint="Username"
-            android:inputType="textPersonName"
-            android:padding="10dp"
-            android:textColorHint="#009688" />
+            android:layout_height="wrap_content">
 
-        <EditText
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:drawableLeft="@drawable/ic_person_black"
+                android:drawablePadding="16dp"
+                android:drawableTint="#009688"
+                android:hint="@string/username"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColorHint="#009688" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:drawableLeft="@drawable/ic_enhanced_encryption_black"
-            android:drawablePadding="16dp"
-            android:hint="Password"
-            android:padding="10dp"
-            android:inputType="textPassword"
-            android:drawableTint="#009688"
-            android:textColorHint="#009688" />
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/ic_enhanced_encryption_black"
+                android:drawablePadding="16dp"
+                android:drawableTint="#009688"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textColorHint="#009688" />
+
+        </android.support.design.widget.TextInputLayout>
 
         <Button
             android:id="@+id/sign_In_Btn"
@@ -59,30 +73,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:orientation="vertical"
+        android:layout_marginBottom="30dp"
         android:gravity="center"
-        android:layout_marginBottom="30dp">
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Don't have an account?"
             android:textSize="24sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/sign_up"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sign Up"
-            android:textStyle="bold"
-            android:textSize="18sp"/>
-
-
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
 
     </LinearLayout>
-
 
 
 </RelativeLayout>

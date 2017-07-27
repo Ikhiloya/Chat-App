@@ -36,7 +36,6 @@
         android:textSize="24sp" />
 
     <ImageView
-        android:src="@drawable/ikhi"
         android:id="@+id/profile_pic"
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -44,75 +43,111 @@
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
         android:padding="10dp"
-        android:scaleType="centerCrop" />
+        android:scaleType="centerCrop"
+        android:src="@drawable/ikhi" />
 
     <ImageButton
         android:id="@+id/camera_btn"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_above="@+id/first_name"
+        android:layout_above="@+id/linearlayout"
         android:layout_toEndOf="@+id/profile_pic"
         android:layout_toRightOf="@+id/profile_pic"
         android:padding="20dp"
         android:tint="#757575"
         app:srcCompat="@drawable/ic_add_a_photo_black" />
 
-
-    <EditText
-        android:id="@+id/first_name"
+    <LinearLayout
+        android:id="@+id/linearlayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/profile_pic"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="5dp"
-        android:layout_marginTop="5dp"
-        android:hint="@string/first_name"
-        android:inputType="textCapWords"
-        android:padding="8dp" />
+        android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/last_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/first_name"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="5dp"
-        android:hint="@string/last_name"
-        android:inputType="textCapWords"
-        android:padding="8dp" />
 
-    <EditText
-        android:id="@+id/preferedUser__name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/last_name"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="5dp"
-        android:hint="@string/preferred_user_name"
-        android:inputType="textCapWords"
-        android:padding="8dp" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <EditText
-        android:id="@+id/job_desc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/preferedUser__name"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="5dp"
-        android:hint="@string/what_i_do"
-        android:inputType="textCapWords"
-        android:padding="8dp" />
+            <EditText
+                android:id="@+id/first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:hint="@string/first_name"
+                android:inputType="textCapWords"
+                android:padding="8dp" />
 
-    <EditText
-        android:id="@+id/phone_num"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/job_desc"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="5dp"
-        android:hint="@string/phone_number"
-        android:inputType="phone"
-        android:padding="8dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:hint="@string/last_name"
+                android:inputType="textCapWords"
+                android:padding="8dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/preferedUser__name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:hint="@string/preferred_user_name"
+                android:inputType="textCapWords"
+                android:padding="8dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/job_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:hint="@string/what_i_do"
+                android:inputType="textCapWords"
+                android:padding="8dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/phone_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:hint="@string/phone_number"
+                android:inputType="phone"
+                android:padding="8dp" />
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
 
 </RelativeLayout>
 

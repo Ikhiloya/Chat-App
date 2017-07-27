@@ -22,39 +22,59 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <EditText
-        android:id="@+id/idea_editText"
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:hint="@string/idea"
-        android:inputType="textMultiLine"
-        android:padding="10dp"
-        android:textColorHint="#009688" />
+        android:layout_height="wrap_content">
 
-    <EditText
-        android:id="@+id/rational_editText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="10dp"
-        android:drawablePadding="16dp"
-        android:hint="@string/rational"
-        android:inputType="textMultiLine"
-        android:padding="10dp"
-        android:textColorHint="#009688" />
+        <EditText
+            android:id="@+id/idea_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="@string/idea"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:textColorHint="#009688" />
 
-    <EditText
-        android:id="@+id/effect_editText"
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="10dp"
-        android:drawablePadding="16dp"
-        android:hint="@string/effect"
-        android:inputType="textMultiLine"
-        android:padding="10dp"
-        android:textColorHint="#009688" />
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/rational_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:drawablePadding="16dp"
+            android:hint="@string/rational"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:textColorHint="#009688" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/effect_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:drawablePadding="16dp"
+            android:hint="@string/effect"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:textColorHint="#009688" />
+
+
+    </android.support.design.widget.TextInputLayout>
 
 
     <Button

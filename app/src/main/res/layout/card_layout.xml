@@ -12,21 +12,21 @@
     android:foreground="?selectableItemBackground"
     android:onClick="cardViewOnclick"
     card_view:cardBackgroundColor="#81C784"
-    card_view:cardCornerRadius="12dp"
+    card_view:cardCornerRadius="8dp"
     card_view:cardElevation="3dp"
-    card_view:contentPadding="4dp">
+    card_view:contentPadding="2dp">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="8dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="3"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
 
@@ -63,96 +63,82 @@
                 android:layout_alignParentRight="true"
                 android:layout_alignParentStart="true"
                 android:layout_below="@id/userName"
-                android:layout_weight="3"
+                android:layout_weight="1"
                 tools:text="idea" />
 
         </LinearLayout>
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:gravity="right"
             android:orientation="horizontal">
 
-            <RelativeLayout
+
+            <ImageButton
+                android:id="@+id/down_btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_margin="0dp"
+                android:padding="0dp"
+                android:tint="#757575"
+                app:srcCompat="@drawable/ic_thumb_down_black" />
+
+            <TextView
+                android:id="@+id/downvote_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toLeftOf="@+id/heart_button"
-                android:layout_toStartOf="@+id/heart_button"
-                android:paddingRight="10dp">
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/down_btn"
+                android:layout_toRightOf="@+id/down_btn"
+                android:padding="5dp"
+                android:text="0"
+                android:textColor="#757575" />
 
 
-                <ImageButton
-                    android:id="@+id/down_btn"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_centerVertical="true"
-                    android:layout_margin="10dp"
-                    android:padding="20dp"
-                    android:tint="#757575"
-                    app:srcCompat="@drawable/ic_thumb_down_black" />
+            <ImageButton
+                android:id="@+id/up_btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@id/downvote_text"
+                android:padding="10dp"
+                android:src="@drawable/ic_thumb_up_black"
+                android:tint="#009688" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/down_btn"
-                    android:text="downvote" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
+            <TextView
+                android:id="@+id/upvote_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toLeftOf="@+id/down_btn"
-                android:layout_toStartOf="@+id/down_btn"
-                android:paddingRight="10dp">
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/up_btn"
+                android:padding="5dp"
+                android:text="0" />
 
 
-                <ImageButton
-                    android:id="@+id/up_btn"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_centerVertical="true"
-                    android:layout_margin="10dp"
+            <ImageButton
+                android:id="@+id/heart_button"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
 
-                    android:padding="20dp"
-                    android:src="@drawable/ic_thumb_up_black"
-                    android:tint="#009688" />
+                android:layout_toRightOf="@id/upvote_text"
+                android:tint="#EF5350"
+                app:srcCompat="@drawable/ic_heart" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/up_btn"
-                    android:text="upvote" />
-            </RelativeLayout>
-
-
-            <RelativeLayout
+            <TextView
+                android:id="@+id/heartbtn_text"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/heart_button"
+                android:padding="5dp"
+                android:text="0" />
 
-
-                <ImageButton
-                    android:id="@+id/heart_button"
-                    style="?android:attr/borderlessButtonStyle"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:tint="#EF5350"
-                    app:srcCompat="@drawable/ic_heart"
-                    android:layout_centerVertical="true"
-                    android:layout_centerHorizontal="true" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="favorite"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true" />
-            </RelativeLayout>
-
-        </LinearLayout>
+        </RelativeLayout>
 
     </LinearLayout>
 </android.support.v7.widget.CardView>

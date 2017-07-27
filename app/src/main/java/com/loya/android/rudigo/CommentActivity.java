@@ -10,7 +10,9 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class CommentActivity extends AppCompatActivity {
@@ -20,7 +22,7 @@ public class CommentActivity extends AppCompatActivity {
     TextView userIdea;
     TextView effect;
     ListView list;
-    ArrayList<String> commentArray = new ArrayList<String>();
+    ArrayList<Comment> commentArray = new ArrayList<Comment>();
 
 
     @Override
@@ -49,15 +51,28 @@ public class CommentActivity extends AppCompatActivity {
                 if (getComment == null || getComment.trim().equals("")) {
                     Toast.makeText(getBaseContext(), "Input field is empty", Toast.LENGTH_SHORT).show();
                 } else {
-                    commentArray.add(getComment);
-                    ArrayAdapter<String> adapter = new ArrayAdapter<String>
-                            (CommentActivity.this, android.R.layout.simple_list_item_1, commentArray);
-                    list.setAdapter(adapter);
+                    String currentTime = getCurrentTime();
+                    commentArray.add(new Comment(getComment, currentTime));
+                    CommentAdapter commentAdapter = new CommentAdapter(CommentActivity.this, commentArray);
+                    list.setAdapter(commentAdapter);
                     ((EditText) findViewById(R.id.commentText)).setText("");
                 }
             }
         });
 
 
+    }
+
+    //gets the current time
+    private String getCurrentTime() {
+        Date now = new Date(); // Instance of the Date class
+        long curTime = now.getTime(); // Convert a Date to a long value
+        //convert the time in milliseconds into a Date object by calling the Date constructor.
+        Date dateObject = new Date(curTime);
+        //Then we can initialize a SimpleDateFormat instance
+        // and configure it to provide a more readable representation according to the given format.
+        SimpleDateFormat dateFormatter = new SimpleDateFormat("HH:mm a");
+        String currentTime = dateFormatter.format(dateObject);
+        return currentTime;
     }
 }

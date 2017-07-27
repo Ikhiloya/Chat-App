@@ -18,4 +18,18 @@
     <string name="effect">Effect</string>
     <string name="rational">Rational</string>
     <string name="idea">Idea</string>
+    <string name="favorite">favorite</string>
+    <string name="comments">Comments</string>
+    <string name="downvote">downvote</string>
+    <string name="upvote">upvote</string>
+    <string name="ffffffff">ffffffff</string>
+    <string name="default_score">0</string>
+    <string name="default_time">9:05 PM</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="email_address">Email Address</string>
+    <string name="retype_password">Retype Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="register">Register</string>
+    <string name="comment">comment</string>
 </resources>
